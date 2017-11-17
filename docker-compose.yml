@@ -11,8 +11,8 @@ services:
       - /proc/:/host/proc:ro
       - /cgroup/:/host/sys/fs/cgroup:ro
     ports:
-      - 8125/udp
-      - 8126/tcp
+      - 8125:8125/udp
+      - 8126:8126/tcp
     privileged: true
     labels:
       - convox.agent=true
